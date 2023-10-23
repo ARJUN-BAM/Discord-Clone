@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: roboto,arial;
+    margin-bottom: 1200px;
+}
+.top{
+    margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e2124;
+}
+.discord{
+    margin: 0;
+    color:  rgb(149, 148, 148);
+    font-weight: bolder;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+.button img{
+    width: 15px;
+}
+.cut:hover,.minimize:hover{
+    background-color: #50545a;
+}
+.exit:hover{
+    background-color: red;
+}
+.button button{
+    padding-top: 3px;
+    background-color: #1e2124;
+    border: none;
+    opacity: 6;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 23px;
+    
+}
+.friend-list{
+    width: 32px;
+}
+.friend-icon{
+    border-bottom: solid 1px rgb(46, 45, 45);
+}
+.discord-friend-list-icon{
+    padding:10px 4px 6px 4px;
+    width: 50px;
+    border: none;
+    margin-bottom: 8px;
+    background-color:#244ad4;
+    border-radius: 15px;
+}
+.discord-friends{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2124;
+}
+.discord-friends div{
+    display: flex;
+    justify-content: center;
+}
+.discord-friend-no-img{
+    padding: 2px 15px 2px 15px;
+}
+.discord-friend{
+    margin: 8px 10px 8px 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: middle;
+    border-radius: 50%;
+    transition: border-radius 0.15s;
+}
+.discord-friend:hover{
+    cursor: pointer;
+    border-radius: 40%;
+}
+.discord-friend-no-img{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 14px 15px 14px 15px;
+    background-color: #2c2e32;
+    border: none;
+    border-radius: 50%;
+    transition: border-radius 0.15s;   
+}
+.discord-friend-no-img:hover{
+    border-radius: 40%;
+}
+.all-contents{
+    background-color:#282b30;
+    color: white;
+    padding-left: 20px;
+    width: 210px;
+}
+.info-line{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-line:hover{
+    cursor: pointer;
+    padding-bottom: 0px;
+    border-bottom: solid rgba(163, 156, 156, 0.5) 1px;
+}
+.add-content{
+    padding-right:20px ;
+    font-size: 20px;
+}
+.topic{
+    margin-top: 0;
+    color: gray;
+    font-size: 17px;
+}
+.topic:hover{
+    color: white;
+    cursor: pointer;
+}
