@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: roboto,arial;
     margin-bottom: 1200px;
+    background-color:#36393e;
 }
 .top{
     margin: 0;
@@ -43,6 +44,7 @@ body{
     width: 300px;
     position: fixed;
     left: 0;
+    height: 1000px;
     bottom: 0;
     top: 23px;
     
@@ -52,28 +54,32 @@ body{
 }
 .friend-icon{
     border-bottom: solid 1px rgb(46, 45, 45);
+    margin-bottom: 5px;
+    position: relative;
 }
 .discord-friend-list-icon{
     padding:10px 4px 6px 4px;
     width: 50px;
     border: none;
+    cursor: pointer;
+    position: relative;
     margin-bottom: 8px;
     background-color:#244ad4;
     border-radius: 15px;
+    transition: margin 0.1s;
 }
 .discord-friends{
-    padding-top: 10px;
+    padding: 10px 2px 0px 2px;
     display: flex;
     flex-direction: column;
     background-color: #1e2124;
 }
 .discord-friends div{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
-.discord-friend-no-img{
-    padding: 2px 15px 2px 15px;
-}
+
 .discord-friend{
     margin: 8px 10px 8px 10px;
     width: 50px;
@@ -81,53 +87,89 @@ body{
     object-fit: cover;
     object-position: middle;
     border-radius: 50%;
-    transition: border-radius 0.15s;
+    transition: border-radius 0.2s;
 }
-.discord-friend:hover{
-    cursor: pointer;
-    border-radius: 40%;
+.discord-friend:active{
+    margin-top: 9px;
+    margin-bottom: 7px;
 }
 .discord-friend-no-img{
     font-size: 18px;
+    padding: 0px 15px 0px 15px;
+    margin-top: 2px;
     font-weight: 500;
     color: white;
-    padding: 14px 15px 14px 15px;
-    background-color: #2c2e32;
+    width: 50px;
+    height: 50px;
+    background-color:#36393e;
     border: none;
     border-radius: 50%;
-    transition: border-radius 0.15s;   
+    margin-bottom: 0px;
+    transition: border-radius 0.2s;   
 }
 .discord-friend-no-img:hover{
-    border-radius: 40%;
+    background-color: #244ad4;
 }
+.discord-friend-no-img:active{
+ margin-bottom: 1px;
+ margin-top: 1px;
+}
+
+.discord-add-server,
+.discord-explore-server,
+.discord-download-apps{
+    border: none;
+    margin: 0px 10px 8px 10px;
+    width: 50px;
+    position: relative;
+    height: 50px;
+    object-fit: cover;
+    object-position: middle;
+    border-radius: 50%;
+    transition: border-radius 0.2s;
+    background-color: #36393e;
+}
+.discord-download-apps{
+    margin-top: 8px;
+}
+.discord-add-server img{
+    width: 20px;
+}
+.discord-download-apps img{
+    width: 30px;
+}
+.discord-download-apps:active{
+    margin-top: 10px;
+}
+.discord-explore-server img{
+    width: 25px;
+}
+.discord-add-server:hover,
+.discord-explore-server:hover,
+.discord-download-apps:hover{
+    background-color: rgb(83, 147, 83);
+}
+.discord-add-server:hover,
+.discord-friend-no-img:hover,
+.discord-friend:hover,
+.discord-explore-server:hover,
+.discord-download-apps:hover
+{
+    cursor: pointer;
+    border-radius: 29%;
+}
+.discord-add-server:active,
+.discord-explore-server:active
+{
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+.friend-icon-last{
+    border-top: 1px solid #2c2e32;
+ }
 .all-contents{
     background-color:#282b30;
     color: white;
     padding-left: 20px;
     width: 210px;
-}
-.info-line{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.info-line:hover{
-    cursor: pointer;
-    padding-bottom: 0px;
-    border-bottom: solid rgba(163, 156, 156, 0.5) 1px;
-}
-.add-content{
-    padding-right:20px ;
-    font-size: 20px;
-}
-.topic{
-    margin-top: 0;
-    color: gray;
-    font-size: 17px;
-}
-.topic:hover{
-    color: white;
-    cursor: pointer;
 }

@@ -1,0 +1,85 @@
+.intro-upon-hover,
+.intro-upon-hover-add,
+.intro-upon-hover-explore,
+.intro-upon-hover-download{
+    color: rgb(178, 177, 177);
+    position: absolute;
+    right: -160px;
+    top: -8px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.intro-upon-hover-add{
+    right: -132px;
+}
+
+.intro-upon-hover-explore{
+    right: -258px;
+}
+.intro-upon-hover-download{
+    right: -150px;
+}
+
+.discord-friend-list-icon:hover,
+.discord-add-server:hover,
+.discord-download-apps:hover,
+.discord-explore-server:hover,
+.test:hover{
+   .intro-upon-hover {
+        opacity: 1;
+    }   
+    .intro-upon-hover-add {
+        opacity: 1;
+    } 
+    .intro-upon-hover-explore {
+        opacity: 1;
+    } 
+    .intro-upon-hover-download {
+        opacity: 1;
+    } 
+
+    .pointing{
+        opacity: 1;
+    }
+    .pointing-cat{
+        opacity: 1;
+    }
+}
+.discord-friend-list-icon:active{
+    margin-bottom: 7px;
+    margin-top: 1px;
+}
+.pointing,
+.pointing-cat{
+    height: 21px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    left: -28px;
+    top: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+
+}
+.discord-friend-list-icon{
+    .pointing{
+        opacity: 1;
+        height: 40px;
+        top: 5px;
+    }
+}
+.pointing-cat{
+    left: -18px;
+    top: 21px;    
+}
+.test{
+    position: relative;
+}
