@@ -1,0 +1,18 @@
+.all-contents{
+    background-color: #282b30;
+    color: white;
+    width: 220px;
+}
+.find-conversation-input{
+    color: rgb(219, 216, 216);
+    background-color: #1e2124;
+    border: none;
+    width: 200px;
+    margin: 10px 0px 10px 7px;
+    padding: 7px 0px 7px 4px;
+    border-radius: 3px;
+    font-size: 13.4px;
+}
+.find-convo{
+    border-bottom: 1px solid #1e2124;
+}
