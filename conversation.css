@@ -1,18 +1,60 @@
 .all-contents{
     background-color: #282b30;
     color: white;
-    width: 220px;
+    width: 240px;
+    margin-top: 53px;
 }
 .find-conversation-input{
-    color: rgb(219, 216, 216);
+    color: rgb(255, 255, 255);
     background-color: #1e2124;
     border: none;
-    width: 200px;
-    margin: 10px 0px 10px 7px;
-    padding: 7px 0px 7px 4px;
+    width: 217px;
+    font-size: large;
+    margin: 10px 0px 10px 10px;
+    padding: 7px 0px 6px 4px;
     border-radius: 3px;
-    font-size: 13.4px;
+    font-size: 13.49px;
+    font-weight: 400;
 }
 .find-convo{
     border-bottom: 1px solid #1e2124;
+    position: fixed;
+    z-index: 1000;
+    left: 74px;
+    width: 238px;
+    background-color: #282b30;
+}
+.friend-convo-list{
+    margin: 7px 0px 1px 8px;
+}
+.friend-convo-button-img{
+    width: 30px; 
+    margin: 0px 4px 1px 6px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.friend-convo-button{
+    border: none;
+    background-color: #282b30;
+    width: 225px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: middle;
+    color: white;
+    font-size: 15.4px;
+    opacity: 0.5;
+    transition: background-color 0.15s;
+}
+.friend-convo-button:hover{
+    opacity: 1;
+    background-color: #3a3d42;
+}
+.friend-convo-button p{
+    margin:8px;
+}
+.find-conversation-input,
+.friend-convo-button{
+    cursor: pointer;
 }

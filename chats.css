@@ -1,0 +1,138 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 74px;
+    margin-top: 23px;
+    color: white;
+    position: relative;
+    background-color: #282b30;
+}
+.chat-top{
+    display: flex;
+    flex-direction: row;
+    align-items: middle;
+    justify-content: space-between;
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+.chat-top p{
+    margin-bottom: 5px;
+}
+.direct-message{
+    font-size: 11.5px;
+    opacity: 0.5;
+    cursor: default;
+}
+.plus{
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.chat-top:hover{
+    .direct-message{
+        opacity: 1;
+    }
+}
+
+.friend-chat-button-img{
+    width: 37px; 
+    margin: 0px 4px 1px 10px;
+    height: 37px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.friend-chat-button-clickled{
+    cursor: pointer;
+    padding-top: 5px;
+    border: none;
+    background-color: #4f5359;
+    width: 225px;
+    height: 48px;
+    border-radius: 5px;
+    margin-left: 7px;
+    display: flex;
+    color: white;
+    font-size: 15.4px;
+}
+.friend-chat-button-clickled p{
+    margin-top: 6px;
+    margin-left: 8px;
+}
+.friend-chat-button{
+    cursor: pointer;
+    padding-top: 5px;
+    border: none;
+    background-color: #282b30;
+    width: 225px;
+    height: 48px;
+    border-radius: 5px;
+    margin-left: 7px;
+    display: flex;
+    align-items: middle;
+    color: grey;
+    font-size: 15.4px;
+    transition: background-color 0.15s;
+}
+.friend-chat-button:hover{
+    background-color: #3a3d42;
+    color: white;
+}
+.friend-chat-button p{
+    margin:8px;
+}
+.mic-speaker-options{
+    position: fixed;
+    z-index: 1000;
+    width: 238px;
+    height: 50px;
+    bottom: 0;
+    background-color: #1e2124;
+    display: flex;
+    flex-direction: row;
+    align-items: middle;
+    justify-content: space-around;
+}
+.profile{
+    border: none;
+    background-color: #1e2124;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.profile p{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    vertical-align: top;
+    margin-top: 4px;
+}
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.option{
+    background-color: #1e2124;
+    border: none;
+    padding-top: 0;
+    height: 40px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.option1{
+    width: 16px;
+}
+.option-setting{
+    width: 25px;
+}
+.option-headphone{
+    width: 22px;
+}
+.profile:hover,
+.option:hover{
+  background-color: #3a3d42;
+}
