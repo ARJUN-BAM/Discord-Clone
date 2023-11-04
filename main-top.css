@@ -1,0 +1,28 @@
+
+.inner-top{
+    width: 1fr;
+    height: 50px;
+    position: fixed;
+    top: 23px;
+    left:315px;
+    color: white;
+    right: 0;
+    border: 1px solid white;
+}
+.body-convo{
+    display: flex;
+    flex-direction: row;
+}
+.inner-bottom{
+    border: 1px solid white;
+    margin-top: 52px;
+    width: 1fr;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.inner-bottom div{
+    width: 100%;
+    left: 315px;
+    right: 0;
+}

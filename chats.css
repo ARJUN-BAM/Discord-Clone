@@ -2,9 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 240px;
-    margin-left: 74px;
-    margin-top: 23px;
-    height: 1500px;
+    height: 1100px;
     color: white;
     position: relative;
     background-color: #282b30;
@@ -15,8 +13,22 @@
     align-items: middle;
     justify-content: space-between;
     width: 200px;
-    padding-left: 15px;
+    padding-left: 26px;
     padding-top: 8px;
+    position: relative;
+}
+.create-dm{
+    position: absolute;
+    right: -29px;
+    top: -10px;
+    border: none;
+    color: white;
+    background-color: #1e2124;
+    padding: 3px 5px 5px 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
 }
 .chat-top p{
     margin-bottom: 5px;
@@ -31,6 +43,13 @@
     font-size: 20px;
     cursor: pointer;
 }
+.plus:hover{
+    .create-dm{
+        opacity: 1;
+    }
+    
+}
+
 .chat-top:hover{
     .direct-message{
         opacity: 1;
@@ -50,10 +69,12 @@
     border: none;
     background-color: #4f5359;
     width: 225px;
-    height: 48px;
+    height: 45px;
     border-radius: 5px;
     margin-left: 7px;
     display: flex;
+    margin-bottom: 1px;
+    position: relative;
     color: white;
     font-size: 15.4px;
 }
@@ -61,17 +82,24 @@
     margin-top: 6px;
     margin-left: 8px;
 }
+.friend-chat-button-clickled:hover,
+.friend-chat-button:hover{
+    .cancel-chat{
+        opacity: 0.6;
+    }
+}
 .friend-chat-button{
     cursor: pointer;
     padding-top: 5px;
     border: none;
     background-color: #282b30;
     width: 225px;
-    height: 48px;
+    height: 45px;
     border-radius: 5px;
     margin-left: 7px;
     display: flex;
     align-items: middle;
+    position: relative;
     color: grey;
     font-size: 15.4px;
     transition: background-color 0.15s;
@@ -95,12 +123,23 @@
     align-items: middle;
     justify-content: space-around;
 }
+.mic-speaker-options div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.chat-friend-list div{
+    height: 45px;
+    width: 225px;
+}
 .profile{
     border: none;
     background-color: #1e2124;
     height: 40px;
     margin-top: 5px;
     border-radius: 3px;
+    position: relative;
+    cursor: pointer;
 }
 .profile p{
     display: inline-block;
@@ -108,6 +147,18 @@
     color: white;
     vertical-align: top;
     margin-top: 4px;
+}
+.online-sign{
+    position: absolute;
+    right: 36px;
+    bottom: -9px;
+}
+.online{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 28px;
+    bottom: 8px;
 }
 .profile-pic{
     width: 35px;
@@ -121,9 +172,13 @@
     border: none;
     padding-top: 0;
     height: 40px;
-    margin: 5px;
+    margin-top: 5px;
     border-radius: 3px;
+    cursor: pointer;
+    margin-right: 2px;
+    position: relative;
 }
+
 .option1{
     width: 16px;
 }
@@ -136,4 +191,20 @@
 .profile:hover,
 .option:hover{
   background-color: #3a3d42;
+}
+.cancel-chat{
+    width: 17px;
+   height: 17px;
+   position: absolute;
+   right: 17px;
+   top: 13px;
+   opacity: 0;
+   transition: opacity 0.2px;
+}
+.online-status{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 42px;
+    bottom: 6px;
 }
