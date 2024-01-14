@@ -16,17 +16,6 @@
     align-items: center;
 }
 
-.inner-bottom{
-    color: white;
-    display: flex;
-    top: 74px;
-    bottom: 0;
-    left: 315px;
-    right: 0;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .inbox-profile{
     width: 122.183px;
     display: flex;
@@ -130,6 +119,7 @@
     background-color: black;
     opacity: 0;
     transition: opacity 0.15s;
+    pointer-events: none;
 }
 .label2{
    left: -15px;
@@ -139,4 +129,3 @@
     width: 35px;
     left: -15px;
 }
-]
