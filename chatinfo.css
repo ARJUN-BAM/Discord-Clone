@@ -1,0 +1,27 @@
+.side-info{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    width: 300px;
+}
+.chat-side1,.chat-side2{
+    margin-top: 1px;
+    background-color: rgb(23, 22, 22);
+    color: rgb(233, 195, 195);
+    border: none;
+    text-align: start;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.chat-side1{
+    margin-top: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.chat-side2{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
